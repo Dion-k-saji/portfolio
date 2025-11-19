@@ -26,7 +26,7 @@ function HeroSection({name, animation}) {
                     transition={{ delay: 2.2, duration: 1, ease: ['easeInOut'] }}
                     className="text-5xl/10 lg:text-8xl/25 px-24 lg:px-36 tracking-tightest"
                 >
-                    I’m {name}, a full stack developer with a <span className="italic">biiiig</span> brain.
+                    I’m Dion, a data scientist who loves working with <span className="italic">data</span> and finding useful <span className="italic">insights</span>.
                 </motion.p>
             </div>
             <div className="flex flex-col items-center gap-2 text-lg">

@@ -4,11 +4,11 @@ import SplitStaggerText from "./animation/SplitStaggerText.jsx"
 function SkillSection({animation}) {
 
     const skills = [
-        {id:1, title: "Frontend", content: "HTML, CSS, JavaScript, TailwindCSS"},
-        {id:2, title: "Backend", content: "Django, Django REST Framework"},
-        {id:3, title: "Area 3", content: "Skill 1, Skill 2, Skill 3, Skill 4"},
-        {id:4, title: "Area 4", content: "Skill 1, Skill 2, Skill 3, Skill 4"},
-        {id:5, title: "Area 5", content: "Skill 1, Skill 2, Skill 3, Skill 4"},
+        {id:1, title: "Programming & Query Languages ", content: "Python, SQL."},
+        {id:2, title: "Data Analysis ", content: "Pandas, NumPy, EDA."},
+        {id:3, title: "Visualization ", content: " Power BI, Matplotlib, Seaborn."},
+        {id:4, title: "Machine Learning ", content: "Regression Classification, Decision Trees, Random Forest."},
+        {id:5, title: "Tools ", content: "Jupyter Notebook, VS Code, MySQL, Git."},
     ]
 
     return (

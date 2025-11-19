@@ -4,14 +4,14 @@ import { ArrowUpRight } from "lucide-react"
 function ContactSection({animation}) {
 
     const contacts = [
-        {id: 1, text: "social-link-1", href: "#"},
-        {id: 2, text: "social-link-2", href: "#"},
-        {id: 3, text: "social-link-3", href: "#"},
+        {id: 1, text: "dionksaji03@gmail.com", href: "dionksaji03@gmail.com"},
+        {id: 2, text: "github - dion k saji", href: "https://github.com/Dion-k-saji"},
+        {id: 3, text: "linkedin - dion k saji", href: "https://www.linkedin.com/in/dion-k-saji?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"},
     ]
     return (
         <section className="bg-black text-white py-16 flex flex-col items-center gap-8">
             <h1 className="text-3xl/6 font-normal tracking-tighter">CONTACT ME</h1>
-            <div className="w-32"><img src="https://dummyimage.com/200x200/fff/000" alt="" className="fit rounded-full"/></div>
+            <div className="w-32"><img src="/dks.jpg" alt="" className="fit rounded-full"/></div>
 
             <ul className="flex flex-col items-center">
                 {
