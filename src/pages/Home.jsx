@@ -10,8 +10,8 @@ import ContactSection from "../components/ContactSection.jsx"
 
 function Home() {
 
-	const firstName = "John"
-	const lastName = "Doe"
+	const firstName = "Dion K"
+	const lastName = "Saji"
 
 	const fadeInUp = {
 		initial: {

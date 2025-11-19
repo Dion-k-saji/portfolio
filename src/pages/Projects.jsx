@@ -5,9 +5,9 @@ import { Link } from "react-router"
 function Projects() {
     const projects = [
         {id: 1, title: "LIBRARY MANAGEMENT SYSTEM", github: "https://github.com/sahilsol0/library_management", images: []},
-        {id: 2, title: "Project 2", github: "#", images: []},
-        {id: 3, title: "Project 3", github: "#", images: []},
-        {id: 4, title: "Project 4", github: "#", images: []},
+        {id: 2, title: "Cookmate An AI Recipy Generator", github: "https://github.com/Dion-k-saji/Cookmate-An-AI-Recipy-Generator", images: []},
+        {id: 3, title: "credit card fraud detection using decision tree algorithm", github: "https://github.com/Dion-k-saji/credit-card-fraud-detection-using-decision-tree-algorithm-", images: []},
+        {id: 4, title: "DATA CLEANING USING SQL", github: "https://github.com/Dion-k-saji/DATA-CLEANING-USING-SQL", images: []},
     ]
 
     const animation = {
