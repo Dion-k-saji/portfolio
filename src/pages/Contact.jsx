@@ -1,0 +1,76 @@
+import { motion } from "motion/react"
+import { Link } from "react-router"
+import { ArrowUpRight, ArrowLeft } from "lucide-react"
+
+function Contact() {
+
+    const animation = {
+		initial: {
+		  opacity: 0,
+		  filter: 'blur(10px)',
+		  y: 75,
+		},
+		whileInView: {
+		  opacity: 1,
+		  filter: 'blur(0px)',
+		  y: 0,
+		},
+		viewport: { once: true }
+	}
+
+    const contacts = [
+        {id: 1, text: "social-link-1", href: "#"},
+        {id: 2, text: "social-link-2", href: "#"},
+        {id: 3, text: "social-link-3", href: "#"},
+    ]
+    return (
+        <motion.section
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{
+                duration: .5,
+                ease: ['easeInOut']
+            }}
+            className="bg-accent-bg text-accent-fg px-10 py-12 flex flex-col items-center gap-10 min-h-dvh"
+        >
+            <motion.h1
+                {...animation}
+                transition={{ delay: 0.2, duration: 1, ease: 'easeInOut' }}
+                className="text-5xl/12 font-bold tracking-tighter text-center"
+                >
+                LET'S CREATE SOMETHING GREAT !!
+            </motion.h1>
+            <motion.h1 
+                {...animation}
+                transition={{ delay: 0.3, duration: 1, ease: 'easeInOut' }}
+                className="text-4xl/8 font-normal tracking-tighter text-center"
+                >
+                CONTACT ME
+            </motion.h1>
+            <motion.div 
+                {...animation}
+                transition={{ delay: 0.4, duration: 1, ease: 'easeInOut' }}
+                className="w-48"
+            >
+                <img src="https://dummyimage.com/200x200/000/fff" alt="" className="fit rounded-full"/>
+            </motion.div>
+
+            <ul className="flex flex-col items-center">
+                {
+                    contacts.map((contact) => (
+                        <motion.li 
+                            key={contact.id}
+                            {...animation}
+                            transition={{ delay: 0.1 * contact.id + 0.4, duration: 1, ease: 'easeInOut' }}
+                        >
+                            <a href={contact.href} target="#" className="flex items-end text-xl underline">{contact.text}<ArrowUpRight /></a>
+                        </motion.li>
+                    ))
+                }
+            </ul>
+            <Link to="/" className="flex mt-20"><ArrowLeft />Go Back</Link>
+      </motion.section>
+    )
+}
+
+export default Contact
