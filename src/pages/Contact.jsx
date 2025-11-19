@@ -19,9 +19,9 @@ function Contact() {
 	}
 
     const contacts = [
-        {id: 1, text: "social-link-1", href: "#"},
-        {id: 2, text: "social-link-2", href: "#"},
-        {id: 3, text: "social-link-3", href: "#"},
+        {id: 1, text: "dionksaji03@gmail.com", href: "dionksaji03@gmail.com"},
+        {id: 2, text: "github - dion k saji", href: "https://github.com/Dion-k-saji"},
+        {id: 3, text: "linkedin - dion k saji", href: "https://www.linkedin.com/in/dion-k-saji?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"},
     ]
     return (
         <motion.section
@@ -52,7 +52,7 @@ function Contact() {
                 transition={{ delay: 0.4, duration: 1, ease: 'easeInOut' }}
                 className="w-48"
             >
-                <img src="https://dummyimage.com/200x200/000/fff" alt="" className="fit rounded-full"/>
+                <img src="/dks.jpg" alt="" className="fit rounded-full"/>
             </motion.div>
 
             <ul className="flex flex-col items-center">
